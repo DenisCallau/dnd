@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -21,8 +22,7 @@ public class HeavyCrossbow extends Weapon {
 		properties.add(WeaponProperties.HEAVY);
 		properties.add(WeaponProperties.TWO_HANDED);
 		properties.add(WeaponProperties.AMMUNITION);
-		range.put("min", 100);
-		range.put("max", 400);
+		range = new Range(100, 400);
 	}
 
 }

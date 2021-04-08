@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -20,8 +21,7 @@ public class LightCrossbow extends Weapon {
 		properties.add(WeaponProperties.LOADING);
 		properties.add(WeaponProperties.TWO_HANDED);
 		properties.add(WeaponProperties.AMMUNITION);
-		range.put("min", 80);
-		range.put("max", 320);
+		range = new Range(80, 320);
 	}
 
 }

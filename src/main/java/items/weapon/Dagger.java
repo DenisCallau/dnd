@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -20,8 +21,7 @@ public class Dagger extends Weapon {
 		properties.add(WeaponProperties.FINESSE);
 		properties.add(WeaponProperties.LIGHT);
 		properties.add(WeaponProperties.THROWN);
-		range.put("min", 20);
-		range.put("max", 60);		
+		range = new Range(20, 60);
 	}
 
 }
