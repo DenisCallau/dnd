@@ -1,16 +1,16 @@
 package items.clothes;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 
 public class CommonClothes extends Cloth {
 
 	public CommonClothes() {
 		name = "Common Clothes";
-		price = new Currency(5, CurrencyTypes.SILVER);
-		weight = new Measure(3, MeasureUnits.POUND);
+		price = new Price(5, CurrencyUnits.SILVER);
+		weight = new Weight(3, WeightUnits.POUND);
 	}
 
 }

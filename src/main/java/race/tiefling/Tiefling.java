@@ -12,8 +12,8 @@ public class Tiefling extends Race {
 		name = "Tiefling";
 		size = "Medium";
 		speed = 30;
-		languages.add(constants.Languages.COMMON);
-		languages.add(constants.Languages.INFERNAL);
+		languages.add(constants.Languages.COMMON.toString());
+		languages.add(constants.Languages.INFERNAL.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.INTELLIGENCE, 2);
 		aih.incrementSpecificAbility(abilityBonus, Abilities.CHARISMA, 2);
 	}

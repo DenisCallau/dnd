@@ -1,16 +1,17 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Lock extends CommonItem {
 
 	public Lock() {
 		name = "Lock";
-		price = new Currency(10, CurrencyTypes.GOLD);
-		weight = new Measure(1, MeasureUnits.POUND);
+		price = new Price(10, CurrencyUnits.GOLD);
+		weight = new Weight(1, WeightUnits.POUND);
 	}
 
 }

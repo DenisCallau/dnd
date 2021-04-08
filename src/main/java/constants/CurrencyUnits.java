@@ -1,6 +1,6 @@
 package constants;
 
-public enum CurrencyTypes {
+public enum CurrencyUnits {
 
     NULL,
     COPPER,

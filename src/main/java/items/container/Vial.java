@@ -1,17 +1,19 @@
 package items.container;
 
-import constants.CurrencyTypes;
-import constants.MeasureUnits;
-import helpers.Currency;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.DistanceUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Volume;
+import helpers.Weight;
 
 public class Vial extends Container {
 
     public Vial() {
         name = "Vial";
-        weight = new Measure(0, MeasureUnits.NULL);
-        price = new Currency(1, CurrencyTypes.COPPER);
-        capacity = new Measure(4, MeasureUnits.OUNCE);
+        price = new Price(1, CurrencyUnits.COPPER);
+        weight = new Weight(0, WeightUnits.POUND);
+        capacity = new Weight(4, WeightUnits.OUNCE);
     }
 
 }

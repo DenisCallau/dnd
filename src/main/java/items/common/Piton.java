@@ -1,16 +1,17 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Piton extends CommonItem {
 
 	public Piton() {
 		name = "Piton";
-		price = new Currency(5, CurrencyTypes.COPPER);
-		weight = new Measure(25, MeasureUnits.POUND);
+		price = new Price(5, CurrencyUnits.COPPER);
+		weight = new Weight(25, WeightUnits.POUND);
 	}
 
 }

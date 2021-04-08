@@ -12,8 +12,8 @@ public class Elf extends Race {
 		name = "Elf";
 		size = "Medium";
 		speed = 30;
-		languages.add(constants.Languages.COMMON);
-		languages.add(constants.Languages.ELVISH);
+		languages.add(constants.Languages.COMMON.toString());
+		languages.add(constants.Languages.ELVISH.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.DEXTERY, 2);
 	}
 

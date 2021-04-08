@@ -1,12 +1,12 @@
 package items;
 
-import helpers.Currency;
-import helpers.Measure;
+import helpers.Price;
+import helpers.Weight;
 
 public abstract class Item {
 	
 	protected String name;
-	protected Measure weight;
-	protected Currency price;
+	protected Weight weight;
+	protected Price price;
 
 }

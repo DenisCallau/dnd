@@ -1,16 +1,16 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 
 public class Blanket extends CommonItem {
 
 	public Blanket() {
 		name = "Blanket";
-		price = new Currency(5, CurrencyTypes.SILVER);
-		weight = new Measure(5, MeasureUnits.POUND);
+		price = new Price(5, CurrencyUnits.SILVER);
+		weight = new Weight(5, WeightUnits.POUND);
 	}
 
 }

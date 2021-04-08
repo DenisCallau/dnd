@@ -1,18 +1,20 @@
 package items.container;
 
-import constants.CurrencyTypes;
-import constants.MeasureUnits;
-import helpers.Currency;
-import helpers.Measure;
-import items.container.Container;
+import constants.CurrencyUnits;
+import constants.DistanceUnits;
+import constants.VolumeUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Volume;
+import helpers.Weight;
 
 public class Bucket extends Container {
 	
 	public Bucket() {
 		name = "Bucket";
-		weight = new Measure(2, MeasureUnits.POUND);
-		price = new Currency(5, CurrencyTypes.COPPER);
-		capacity = new Measure(3, MeasureUnits.GALLON);
+		price = new Price(5, CurrencyUnits.COPPER);
+		weight = new Weight(2, WeightUnits.POUND);
+		capacity = new Volume(3, VolumeUnits.GALLON);
 	}
 
 }

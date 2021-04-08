@@ -12,8 +12,8 @@ public class Gnome extends Race {
 		name = "Gnome";
 		size = "Small";
 		speed = 25;
-		languages.add(constants.Languages.COMMON);
-		languages.add(constants.Languages.GNOMISH);
+		languages.add(constants.Languages.COMMON.toString());
+		languages.add(constants.Languages.GNOMISH.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.INTELLIGENCE, 2);
 	}
 

@@ -2,7 +2,7 @@ package classe.barbarian;
 
 import classe.Classe;
 import constants.Abilities;
-import dice.D12;
+import constants.Dices;
 import proficiences.ArmorCategory;
 import proficiences.WeaponCategory;
 
@@ -11,7 +11,7 @@ public class Barbarian extends Classe {
 	public Barbarian() {
 		this.name = "Barbarian";
 		this.hp = 12;
-		this.hpDice = new D12();
+		this.hpDice = Dices.D12;
 		
 		savingThrows.add(Abilities.STRENGTH);
 		savingThrows.add(Abilities.CONSTITUITION);

@@ -1,17 +1,19 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Distance;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Chain extends CommonItem {
 
 	public Chain() {
 		name = "Chain";
-		price = new Currency(5, CurrencyTypes.GOLD);
-		weight = new Measure(10, MeasureUnits.POUND);
-		quantity = new Measure(10, MeasureUnits.FEET);
+		price = new Price(5, CurrencyUnits.GOLD);
+		weight = new Weight(10, WeightUnits.POUND);
+		quantity = new Distance(10, DistanceUnits.FEET);
 	}
 
 }

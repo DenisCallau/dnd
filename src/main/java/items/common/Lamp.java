@@ -1,16 +1,17 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Lamp extends CommonItem {
 
 	public Lamp() {
 		name = "Lamp";
-		price = new Currency(5, CurrencyTypes.SILVER);
-		weight = new Measure(1, MeasureUnits.POUND);
+		price = new Price(5, CurrencyUnits.SILVER);
+		weight = new Weight(1, WeightUnits.POUND);
 	}
 
 }

@@ -1,17 +1,18 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Ink extends CommonItem {
 
 	public Ink() {
 		name = "Ink";
-		price = new Currency(10, CurrencyTypes.GOLD);
-		weight = new Measure(0, MeasureUnits.NULL);
-		quantity = new Measure(1, MeasureUnits.OUNCE);
+		price = new Price(10, CurrencyUnits.GOLD);
+		weight = new Weight(0, WeightUnits.POUND);
+		quantity = new Weight(1, WeightUnits.OUNCE);
 	}
 
 }

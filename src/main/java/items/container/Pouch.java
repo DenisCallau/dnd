@@ -1,17 +1,18 @@
 package items.container;
 
-import constants.CurrencyTypes;
-import constants.MeasureUnits;
-import helpers.Currency;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.DistanceUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 
 public class Pouch extends Container {
 
     public Pouch() {
         name = "Pouch";
-        weight = new Measure(1, MeasureUnits.POUND);
-        price = new Currency(1, CurrencyTypes.GOLD);
-        capacity = new Measure(6, MeasureUnits.POUND);
+        price = new Price(1, CurrencyUnits.GOLD);
+        weight = new Weight(1, WeightUnits.POUND);
+        capacity = new Weight(6, WeightUnits.POUND);
     }
 
 }

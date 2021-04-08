@@ -12,7 +12,7 @@ public class Human extends Race {
 		name = "Human";
 		size = "Medium";
 		speed = 30;
-		languages.add(constants.Languages.COMMON);
+		languages.add(constants.Languages.COMMON.toString());
 		//TODO: Human should choose one more language
 		aih.incrementSpecificAbility(abilityBonus, Abilities.STRENGTH, 1);
 		aih.incrementSpecificAbility(abilityBonus, Abilities.DEXTERY, 1);

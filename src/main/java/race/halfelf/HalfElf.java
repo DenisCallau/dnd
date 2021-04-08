@@ -12,8 +12,8 @@ public class HalfElf extends Race {
 		name = "Half-Elf";
 		size = "Medium";
 		speed = 30;
-		languages.add(constants.Languages.COMMON);
-		languages.add(constants.Languages.ELVISH);
+		languages.add(constants.Languages.COMMON.toString());
+		languages.add(constants.Languages.ELVISH.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.CHARISMA, 2);
 		//TODO: +1 to two other ability scores
 		//TODO: +1 language of your choice

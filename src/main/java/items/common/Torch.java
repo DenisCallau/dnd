@@ -1,16 +1,17 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Torch extends CommonItem {
 
 	public Torch() {
 		name = "Torch";
-		price = new Currency(1, CurrencyTypes.COPPER);
-		weight = new Measure(1, MeasureUnits.POUND);
+		price = new Price(1, CurrencyUnits.COPPER);
+		weight = new Weight(1, WeightUnits.POUND);
 	}
 
 }

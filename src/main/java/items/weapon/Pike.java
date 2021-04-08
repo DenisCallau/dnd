@@ -1,15 +1,19 @@
 package items.weapon;
 
+import constants.CurrencyUnits;
 import constants.DamageTypes;
 import constants.Dices;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 import proficiences.WeaponCategory;
 
 public class Pike extends Weapon {
 	
 	public Pike() {
 		name = "Pike";
-		weight = 18;
-		price = 5;
+		weight = new Weight(18, WeightUnits.POUND);
+		price = new Price(5, CurrencyUnits.GOLD);
 		category = WeaponCategory.MARTIAL_MELEE_WEAPON;
 		damage = Dices.D10;
 		damageType = DamageTypes.PIERCING;

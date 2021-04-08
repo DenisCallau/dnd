@@ -1,17 +1,20 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.OtherUnits;
+import constants.WeightUnits;
+import helpers.Piece;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class Paper extends CommonItem {
 
 	public Paper() {
 		name = "Paper";
-		price = new Currency(2, CurrencyTypes.SILVER);
-		weight = new Measure(0, MeasureUnits.NULL);
-		quantity = new Measure(1, MeasureUnits.PIECE);
+		price = new Price(2, CurrencyUnits.SILVER);
+		weight = new Weight(0, WeightUnits.POUND);
+		quantity = new Piece(1, OtherUnits.PIECE);
 	}
 
 }

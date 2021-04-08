@@ -1,15 +1,19 @@
 package items.weapon;
 
+import constants.CurrencyUnits;
 import constants.DamageTypes;
 import constants.Dices;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 import proficiences.WeaponCategory;
 
 public class Dart extends Weapon {
 	
 	public Dart() {
 		name = "Dart";
-		weight = 0.25;
-		price = 0.05;
+		weight = new Weight(4, WeightUnits.OUNCE);
+		price = new Price(5, CurrencyUnits.SILVER);
 		category = WeaponCategory.SIMPLE_RANGED_WEAPON;
 		damage = Dices.D4;
 		damageType = DamageTypes.PIERCING;
@@ -17,6 +21,7 @@ public class Dart extends Weapon {
 		properties.add(WeaponProperties.THROWN);
 		range.put("min", 20);
 		range.put("max", 60);
+
 	}
 
 }

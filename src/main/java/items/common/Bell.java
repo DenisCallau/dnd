@@ -1,16 +1,16 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 
 public class Bell extends CommonItem {
 
 	public Bell() {
 		name = "Bell";
-		price = new Currency(1, CurrencyTypes.GOLD);
-		weight = new Measure(0, MeasureUnits.NULL);
+		price = new Price(1, CurrencyUnits.GOLD);
+		weight = new Weight(0, WeightUnits.POUND);
 	}
 
 }

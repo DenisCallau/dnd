@@ -1,17 +1,20 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.VolumeUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Volume;
+import helpers.Weight;
 
 public class Perfume extends CommonItem {
 
 	public Perfume() {
 		name = "Perfume";
-		price = new Currency(5, CurrencyTypes.GOLD);
-		weight = new Measure(0, MeasureUnits.NULL);
-		quantity = new Measure(1, MeasureUnits.VIAL);
+		price = new Price(5, CurrencyUnits.GOLD);
+		weight = new Weight(0, WeightUnits.POUND);
+		quantity = new Volume(1, VolumeUnits.VIAL);
 	}
 
 }

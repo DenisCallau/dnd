@@ -1,17 +1,20 @@
 package items.container;
 
-import constants.CurrencyTypes;
-import constants.MeasureUnits;
-import helpers.Currency;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.DistanceUnits;
+import constants.VolumeUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Volume;
+import helpers.Weight;
 
 public class Waterskin extends Container {
 
     public Waterskin() {
         name = "Waterskin";
-        weight = new Measure(5, MeasureUnits.POUND);
-        price = new Currency(2, CurrencyTypes.SILVER);
-        capacity = new Measure(4, MeasureUnits.PINT);
+        price = new Price(2, CurrencyUnits.SILVER);
+        weight = new Weight(5, WeightUnits.POUND);
+        capacity = new Volume(4, VolumeUnits.PINT);
     }
 
 }

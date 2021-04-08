@@ -1,17 +1,20 @@
 package items.common;
 
-import constants.CurrencyTypes;
-import helpers.Currency;
-import constants.MeasureUnits;
-import helpers.Measure;
+import constants.CurrencyUnits;
+import constants.OtherUnits;
+import constants.WeightUnits;
+import helpers.Piece;
+import helpers.Price;
+import constants.DistanceUnits;
+import helpers.Weight;
 
 public class SpikesIron extends CommonItem {
 
 	public SpikesIron() {
 		name = "Spikes (Iron)";
-		price = new Currency(1, CurrencyTypes.GOLD);
-		weight = new Measure(5, MeasureUnits.POUND);
-		quantity = new Measure(10, MeasureUnits.PIECE);
+		price = new Price(1, CurrencyUnits.GOLD);
+		weight = new Weight(5, WeightUnits.POUND);
+		quantity = new Piece(10, OtherUnits.PIECE);
 	}
 
 }

@@ -1,15 +1,19 @@
 package items.weapon;
 
+import constants.CurrencyUnits;
 import constants.DamageTypes;
 import constants.Dices;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 import proficiences.WeaponCategory;
 
 public class HandCrossbow extends Weapon {
 	
 	public HandCrossbow() {
 		name = "Hand Crossbow";
-		weight = 3;
-		price = 75;
+		weight = new Weight(3, WeightUnits.POUND);
+		price = new Price(75, CurrencyUnits.GOLD);
 		category = WeaponCategory.MARTIAL_RANGED_WEAPON;
 		damage = Dices.D6;
 		damageType = DamageTypes.PIERCING;

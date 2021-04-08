@@ -12,8 +12,8 @@ public class Halfling extends Race {
 		name = "Halfling";
 		size = "Small";
 		speed = 25;
-		languages.add(constants.Languages.COMMON);
-		languages.add(constants.Languages.HALFLING);
+		languages.add(constants.Languages.COMMON.toString());
+		languages.add(constants.Languages.HALFLING.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.DEXTERY, 2);
 	}
 

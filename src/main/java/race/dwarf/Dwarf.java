@@ -13,8 +13,8 @@ public abstract class Dwarf extends Race {
 		name = "Dwarf";
 		size = "Medium";
 		speed = 25;
-		languages.add(Languages.COMMON);
-		languages.add(Languages.DWARVISH);
+		languages.add(Languages.COMMON.toString());
+		languages.add(Languages.DWARVISH.toString());
 		aih.incrementSpecificAbility(abilityBonus, Abilities.CONSTITUITION, 2);
 	}
 	

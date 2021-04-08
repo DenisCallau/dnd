@@ -1,18 +1,18 @@
 package items.container;
 
-import constants.CurrencyTypes;
-import constants.MeasureUnits;
-import helpers.Currency;
-import helpers.Measure;
-import items.container.Container;
+import constants.CurrencyUnits;
+import constants.DistanceUnits;
+import constants.WeightUnits;
+import helpers.Price;
+import helpers.Weight;
 
 public class Basket extends Container {
 	
 	public Basket() {
 		name = "Basket";
-		weight = new Measure(2, MeasureUnits.POUND);
-		price = new Currency(4, CurrencyTypes.SILVER);
-		capacity = new Measure(40, MeasureUnits.POUND);
+		price = new Price(4, CurrencyUnits.SILVER);
+		weight = new Weight(2, WeightUnits.POUND);
+		capacity = new Weight(40, WeightUnits.POUND);
 	}
 
 }
