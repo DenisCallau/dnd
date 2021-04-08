@@ -1,0 +1,92 @@
+[
+	{
+		"package": "Usable",
+		"className": "Acid",
+		"superClassName": "Item",
+		"name": "Acid (vial)",
+		"price": "25",
+		"priceType": "gp",
+		"weight": "1",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "AlchemistsFire",
+		"superClassName": "Item",
+		"name": "Alchemiss Fire (flask)",
+		"price": "50",
+		"priceType": "gp",
+		"weight": "1",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "Antitoxin",
+		"superClassName": "Item",
+		"name": "Antitoxin (vial)",
+		"price": "50",
+		"priceType": "gp",
+		"weight": "0",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "BallBearings",
+		"superClassName": "Item",
+		"name": "Ball Bearings (bag of 1)",
+		"price": "1",
+		"priceType": "gp",
+		"weight": "2",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "Caltrops",
+		"superClassName": "Item",
+		"name": "Caltrops (bag of 20)",
+		"price": "1",
+		"priceType": "gp",
+		"weight": "2",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "HolyWater",
+		"superClassName": "Item",
+		"name": "Holy Water (flask)",
+		"price": "25",
+		"priceType": "gp",
+		"weight": "1",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "Oil",
+		"superClassName": "Item",
+		"name": "Oil (flask)",
+		"price": "1",
+		"priceType": "sp",
+		"weight": "1",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "BasicPoison",
+		"superClassName": "Item",
+		"name": "Basic Poison",
+		"price": "100",
+		"priceType": "gp",
+		"weight": "0",
+		"weightType": "lb"
+	},
+	{
+		"package": "Usable",
+		"className": "PotionOfHealing",
+		"superClassName": "Item",
+		"name": "Potion of Healing",
+		"price": "50",
+		"priceType": "gp",
+		"weight": "0.5 ",
+		"weightType": "lb"
+	}
+]

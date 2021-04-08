@@ -1,0 +1,492 @@
+[
+	{
+		"package": "commonItem",
+		"className": "Abacus",
+		"superClassName": "Item",
+		"name": "Abacus",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Bedroll",
+		"superClassName": "Item",
+		"name": "Bedroll",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Bell",
+		"superClassName": "Item",
+		"name": "Bell",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Blanket",
+		"superClassName": "Item",
+		"name": "Blanket",
+		"price": 5,
+		"priceType": "sp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "BlockAndTackle",
+		"superClassName": "Item",
+		"name": "BlockAndTackle",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Book",
+		"superClassName": "Item",
+		"name": "Book",
+		"price": 25,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Candle",
+		"superClassName": "Item",
+		"name": "Candle",
+		"price": 1,
+		"priceType": "cp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Chain",
+		"superClassName": "Item",
+		"name": "Chain",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 10,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Chalk",
+		"superClassName": "Item",
+		"name": "Chalk",
+		"price": 1,
+		"priceType": "cp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "ComponentsPouch",
+		"superClassName": "Item",
+		"name": "ComponentsPouch",
+		"price": 25,
+		"priceType": "gp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Crowbar",
+		"superClassName": "Item",
+		"name": "Crowbar",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "FishingTackle",
+		"superClassName": "Item",
+		"name": "FishingTackle",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 4,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "GrapplingHook",
+		"superClassName": "Item",
+		"name": "GrapplingHook",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 4,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Hammer",
+		"superClassName": "Item",
+		"name": "Hammer",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 3,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Hourglass",
+		"superClassName": "Item",
+		"name": "Hourglass",
+		"price": 25,
+		"priceType": "gp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "HuntingTrap",
+		"superClassName": "Item",
+		"name": "HuntingTrap",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 25,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Ink",
+		"superClassName": "Item",
+		"name": "Ink",
+		"price": 10,
+		"priceType": "gp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "InkPen",
+		"superClassName": "Item",
+		"name": "InkPen",
+		"price": 2,
+		"priceType": "cp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Ladder",
+		"superClassName": "Item",
+		"name": "Ladder",
+		"price": 1,
+		"priceType": "sp",
+		"weight": 25,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Lamp",
+		"superClassName": "Item",
+		"name": "Lamp",
+		"price": 5,
+		"priceType": "sp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "LanternBullseye",
+		"superClassName": "Item",
+		"name": "LanternBullseye",
+		"price": 10,
+		"priceType": "gp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "LanternHodded",
+		"superClassName": "Item",
+		"name": "LanternHodded",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Lock",
+		"superClassName": "Item",
+		"name": "Lock",
+		"price": 10,
+		"priceType": "gp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "MagnifyingGlass",
+		"superClassName": "Item",
+		"name": "MagnifyingGlass",
+		"price": 100,
+		"priceType": "gp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Manacles",
+		"superClassName": "Item",
+		"name": "Manacles",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 6,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "MinersPick",
+		"superClassName": "Item",
+		"name": "MinersPick",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 10,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Paper",
+		"superClassName": "Item",
+		"name": "Paper",
+		"price": 2,
+		"priceType": "sp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Parchment",
+		"superClassName": "Item",
+		"name": "Parchment",
+		"price": 1,
+		"priceType": "sp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Perfume",
+		"superClassName": "Item",
+		"name": "Perfume",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Piton",
+		"superClassName": "Item",
+		"name": "Piton",
+		"price": 5,
+		"priceType": "cp",
+		"weight": 25,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Pole",
+		"superClassName": "Item",
+		"name": "Pole",
+		"price": 5,
+		"priceType": "cp",
+		"weight": 7,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "PotIron",
+		"superClassName": "Item",
+		"name": "PotIron",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 10,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "PortableRam",
+		"superClassName": "Item",
+		"name": "PortableRam",
+		"price": 4,
+		"priceType": "gp",
+		"weight": 35,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Rations",
+		"superClassName": "Item",
+		"name": "Rations",
+		"price": 5,
+		"priceType": "sp",
+		"weight": 2,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "RopeHemp",
+		"superClassName": "Item",
+		"name": "RopeHemp",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 10,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "RopeSilk",
+		"superClassName": "Item",
+		"name": "RopeSilk",
+		"price": 10,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "ScaleMerchants",
+		"superClassName": "Item",
+		"name": "ScaleMerchants",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 3,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "SealingWax",
+		"superClassName": "Item",
+		"name": "SealingWax",
+		"price": 5,
+		"priceType": "sp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Shovel",
+		"superClassName": "Item",
+		"name": "Shovel",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "SignalWhistle",
+		"superClassName": "Item",
+		"name": "SignalWhistle",
+		"price": 5,
+		"priceType": "cp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "SignetRing",
+		"superClassName": "Item",
+		"name": "SignetRing",
+		"price": 5,
+		"priceType": "gp",
+		"weight": 0,
+		"weightType": ""
+	},
+	{
+		"package": "commonItem",
+		"className": "Sledgehammer",
+		"superClassName": "Item",
+		"name": "Sledgehammer",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 10,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Spellbook",
+		"superClassName": "Item",
+		"name": "Spellbook",
+		"price": 50,
+		"priceType": "gp",
+		"weight": 3,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "SpikesIron",
+		"superClassName": "Item",
+		"name": "SpikesIron",
+		"price": 1,
+		"priceType": "gp",
+		"weight": 5,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Spyglass",
+		"superClassName": "Item",
+		"name": "Spyglass",
+		"price": 1000,
+		"priceType": "gp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Tent",
+		"superClassName": "Item",
+		"name": "Tent",
+		"price": 2,
+		"priceType": "gp",
+		"weight": 20,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Tinderbox",
+		"superClassName": "Item",
+		"name": "Tinderbox",
+		"price": 5,
+		"priceType": "sp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Torch",
+		"superClassName": "Item",
+		"name": "Torch",
+		"price": 1,
+		"priceType": "cp",
+		"weight": 1,
+		"weightType": "lb"
+	},
+	{
+		"package": "commonItem",
+		"className": "Whetstone",
+		"superClassName": "Item",
+		"name": "Whetstone",
+		"price": 1,
+		"priceType": "cp",
+		"weight": 1,
+		"weightType": "lb"
+	}
+]

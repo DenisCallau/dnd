@@ -1,0 +1,56 @@
+[
+	{
+		"package": "Clothes",
+		"className": "Common Clothes",
+		"superClassName": "Item",
+		"name": "Common Clothes",
+		"price": "5",
+		"priceType": "sp",
+		"weight": "3",
+		"weightType": "lb"
+	},
+
+	{
+		"package": "Clothes",
+		"className": "Costume",
+		"superClassName": "Item",
+		"name": "Costume",
+		"price": "5",
+		"priceType": "gp",
+		"weight": "4",
+		"weightType": "lb"
+	},
+
+	{
+		"package": "Clothes",
+		"className": "Fine Clothes",
+		"superClassName": "Item",
+		"name": "Fine Clothes",
+		"price": "15",
+		"priceType": "gp",
+		"weight": "6",
+		"weightType": "lb"
+	},
+
+	{
+		"package": "Clothes",
+		"className": "Robes",
+		"superClassName": "Item",
+		"name": "Robes",
+		"price": "1",
+		"priceType": "gp",
+		"weight": "4",
+		"weightType": "lb"
+	},
+
+	{
+		"package": "Clothes",
+		"className": "Traveler's Clothes",
+		"superClassName": "Item",
+		"name": "Traveler's Clothes",
+		"price": "2",
+		"priceType": "gp",
+		"weight": "4",
+		"weightType": "lb"
+	}
+]

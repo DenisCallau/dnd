@@ -1,0 +1,72 @@
+[
+	{
+		"package": "Kits",
+		"className": "Climbers Kit",
+		"superClassName": "Item",
+		"name": "Climbers Kit",
+		"price": "25",
+		"priceType": "gp",
+		"weight": "12",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Disguise Kit",
+		"superClassName": "Item",
+		"name": "Disguise Kit",
+		"price": "25",
+		"priceType": "gp",
+		"weight": "3",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Forgery Kit",
+		"superClassName": "Item",
+		"name": "Forgery Kit",
+		"price": "15",
+		"priceType": "gp",
+		"weight": "5",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Herbalism Kit",
+		"superClassName": "Item",
+		"name": "Herbalism Kit",
+		"price": "5",
+		"priceType": "gp",
+		"weight": "3",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Healers Kit",
+		"superClassName": "Item",
+		"name": "Healers Kit",
+		"price": "5",
+		"priceType": "gp",
+		"weight": "3",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Mess Kit",
+		"superClassName": "Item",
+		"name": "Mess Kit",
+		"price": "2",
+		"priceType": "sp",
+		"weight": "1",
+		"weightType": "lb"
+	},
+	{
+		"package": "Kits",
+		"className": "Poisoners Kit",
+		"superClassName": "Item",
+		"name": "Poisoners Kit",
+		"price": "50",
+		"priceType": "gp",
+		"weight": "2",
+		"weightType": "lb"
+	}
+]
