@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -18,8 +19,7 @@ public class Javelin extends Weapon {
 		damage = Dices.D6;
 		damageType = DamageTypes.PIERCING;
 		properties.add(WeaponProperties.THROWN);
-		range.put("min", 30);
-		range.put("max", 120);
+		range = new Range(30, 120);
 	}
 
 }

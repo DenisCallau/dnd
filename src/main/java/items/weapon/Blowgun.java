@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -19,8 +20,7 @@ public class Blowgun extends Weapon {
 		damageType = DamageTypes.PIERCING;
 		properties.add(WeaponProperties.LOADING);
 		properties.add(WeaponProperties.AMMUNITION);
-		range.put("min", 25);
-		range.put("max", 100);
+		range = new Range(25, 100);
 	}	
 
 }

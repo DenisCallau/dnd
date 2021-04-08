@@ -5,6 +5,7 @@ import constants.DamageTypes;
 import constants.Dices;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -18,8 +19,7 @@ public class Sling extends Weapon {
 		damage = Dices.D4;
 		damageType = DamageTypes.BLUDGEONING;
 		properties.add(WeaponProperties.AMMUNITION);
-		range.put("min", 30);
-		range.put("max", 120);
+		range = new Range(30, 120);
 	}
 
 }

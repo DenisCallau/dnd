@@ -3,6 +3,7 @@ package items.weapon;
 import constants.CurrencyUnits;
 import constants.WeightUnits;
 import helpers.Price;
+import helpers.Range;
 import helpers.Weight;
 import proficiences.WeaponCategory;
 
@@ -15,8 +16,7 @@ public class Net extends Weapon {
 		category = WeaponCategory.MARTIAL_RANGED_WEAPON;
 		properties.add(WeaponProperties.SPECIAL);
 		properties.add(WeaponProperties.THROWN);
-		range.put("min", 5);
-		range.put("max", 15);
+		range = new Range(5, 15);
 	}
 
 }
