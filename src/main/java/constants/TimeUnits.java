@@ -8,6 +8,11 @@ public enum TimeUnits {
     DAY,
     WEEK,
     MONTH,
-    YEAR;
+    YEAR,
+    ACTION,
+    BONUS_ACTION,
+    REACTION,
+    ROUND,
+    INSTANTANEOUS
 
 }
