@@ -1,4 +1,5 @@
 import json
+import os
 
 with open('spells.json') as file:
 	data = json.load(file)
@@ -7,8 +8,8 @@ j = 0
 
 for x in data:
 
-    name = x['name'].replace("'", "")
-    nameWoSpaces = x['name'].replace(' ', '')
+    name = x['name']
+    nameWoSpaces = x['name'].replace(' ', '').replace('-', '').replace('/', '').replace("'", "")
     level = x['level']
     school = x['school']
     components = x['components']['raw']
@@ -25,23 +26,23 @@ for x in data:
 
     if level == 'cantrip':
         leveln = 'cantrip'
-    if level == 1:
+    if level == '1':
         leveln = 'one'
-    if level == 2:
+    if level == '2':
         leveln = 'two'
-    if level == 3:
+    if level == '3':
         leveln = 'three'
-    if level == 4:
+    if level == '4':
         leveln = 'four'
-    if level == 5:
+    if level == '5':
         leveln = 'five'
-    if level == 6:
+    if level == '6':
         leveln = 'six'
-    if level == 7:
+    if level == '7':
         leveln = 'seven'
-    if level == 8:
+    if level == '8':
         leveln = 'eight'
-    if level == 9:
+    if level == '9':
         leveln = 'nine'
 
 
@@ -50,12 +51,10 @@ for x in data:
 
 
 
-
-
     a = 'package spells.' + leveln + ';\n'
     a += '\n'
     a += 'import constants.TimeUnits;\n'
-    a += 'import constants.Target;\n'
+    a += 'import helpers.Target;\n'
     a += 'import helpers.CastingTime;\n'
     a += 'import helpers.Duration;\n'
     a += 'import helpers.Range;\n'
@@ -72,22 +71,17 @@ for x in data:
     else:
         a += '        level = ' + level + ';\n'
     a += '        school = Schools.' + school.upper() + ';\n'
-    a += '        components = new Components[]{\n'
     for c in components:
         if c == 'V':
-            a += '                Components.VERBAL,\n'
+            a += '        components.add(Components.VERBAL);\n'
         if c == 'S':
-            a += '                Components.SOMATIC,\n'
+            a += '        components.add(Components.SOMATIC);\n'
     if x['components']['material'] == True:
-            a += '                Components.MATERIAL\n'
-    a += '        };\n'
+            a += '        components.add(Components.MATERIAL);\n'
+
     if x['components']['material'] == True:
-         if len(material) == 1:
-            a += '        String material = "' + material[0] + '";\n'
-         else:
-            i = 0
-            for m in material:
-                a += '        String material' + str(i) + ' = "' + material[i] + '";\n'
+        a += '        material = "' + material[0] + '";\n'
+
 
 
     castingCheck = False
@@ -159,22 +153,22 @@ for x in data:
     if 'Self' in r:
         if '(' in rs:
             if 'line' in r:
-                a += '        range = new Range(Target.SELF, ' + rs[1] + ', AreasOfEffect.LINE);\n'
+                a += '        range = new Range(constants.Target.SELF, ' + rs[1] + ', AreasOfEffect.LINE);\n'
                 rangeCheck = True
             if 'sphere' in r:
-                a += '        range = new Range(Target.SELF, ' + rs[1] + ', AreasOfEffect.SPHERE);\n'
+                a += '        range = new Range(constants.Target.SELF, ' + rs[1] + ', AreasOfEffect.SPHERE);\n'
                 rangeCheck = True
             if 'radius' in r:
-                a += '        range = new Range(Target.SELF, ' + rs[1] + ', AreasOfEffect.RADIUS);\n'
+                a += '        range = new Range(constants.Target.SELF, ' + rs[1] + ', AreasOfEffect.RADIUS);\n'
                 rangeCheck = True
             if 'cone' in r:
-                a += '        range = new Range(Target.SELF, ' + rs[1] + ', AreasOfEffect.CONE);\n'
+                a += '        range = new Range(constants.Target.SELF, ' + rs[1] + ', AreasOfEffect.CONE);\n'
                 rangeCheck = True
             if 'cube' in r:
-                a += '        range = new Range(Target.SELF, ' + rs[1] + ', AreasOfEffect.CUBE);\n'
+                a += '        range = new Range(constants.Target.SELF, ' + rs[1] + ', AreasOfEffect.CUBE);\n'
                 rangeCheck = True
         if '(' not in rs:
-            a += '        range = new Range(Target.SELF);\n'
+            a += '        range = new Range(constants.Target.SELF);\n'
             rangeCheck = True
 
 
@@ -195,21 +189,23 @@ for x in data:
     a += '        target = new Target(Aberbo);\n'
 
     a += '        ritual = ' + str(ritual).lower() + ';\n'
-    a += '        description = "' + description.replace('\n', '') + '";\n'
+    description = description.replace('\n', '')
+    description = description.replace('"', "'")
+    a += '        description = "' + description + '";\n'
     if 'higher_levels' in x:
         a += '        higherLevels = "' + higherLevels + '";\n'
     a += '    }\n'
     a += '\n'
     a += '}\n'
 
+#     if level == '2':
+    j += 1
+#     print(name)
 
-#     print('============================')
-#     print(duration)
-    if level == '9':
-        j += 1
-        print(name  )
-        f = open(nameWoSpaces + '.java', 'w')
-        f.write(a)
-        f.close()
+    path = 'C:/Callau/Pessoal/dnd/src/main/java/spells/' + leveln + '/'
+    fileName = os.path.join(path, nameWoSpaces)
+    f = open(fileName + '.java', encoding='utf-8', mode='w')
+    f.write(a)
+    f.close()
 
 print(j)

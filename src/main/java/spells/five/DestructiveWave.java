@@ -1,10 +1,10 @@
 package spells.five;
 
 import constants.TimeUnits;
-import constants.Target;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
+import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -15,15 +15,16 @@ public class DestructiveWave extends Spell {
         name = "Destructive Wave";
         level = 5;
         school = Schools.EVOCATION;
-        components = new Components[]{
-                Components.VERBAL,
-        };
+        components.add(Components.VERBAL);
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
-        range = new Range(Target.SELF);
+        range = new Range(constants.Target.SELF);
         target = new Target(Aberbo);
         ritual = false;
-        description = "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.";
+        description = "You strike the ground, creating a burst of divine energy that ripples outward from you. Each " +
+                "creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 " +
+                "thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A " +
+                "creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.";
     }
 
 }

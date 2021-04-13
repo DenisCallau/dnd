@@ -1,10 +1,9 @@
 package spells.one;
 
 import constants.TimeUnits;
-import constants.Target;
 import helpers.CastingTime;
-import helpers.Duration;
 import helpers.Range;
+import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -15,12 +14,10 @@ public class Jump extends Spell {
         name = "Jump";
         level = 1;
         school = Schools.TRANSMUTATION;
-        components = new Components[]{
-                Components.VERBAL,
-                Components.SOMATIC,
-                Components.MATERIAL
-        };
-        String material = "a grasshopper's hind leg";
+        components.add(Components.VERBAL);
+        components.add(Components.SOMATIC);
+        components.add(Components.MATERIAL);
+        material = "a grasshopper's hind leg";
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);

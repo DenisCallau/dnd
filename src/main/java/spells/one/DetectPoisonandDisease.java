@@ -1,10 +1,10 @@
 package spells.one;
 
 import constants.TimeUnits;
-import constants.Target;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
+import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -15,18 +15,19 @@ public class DetectPoisonandDisease extends Spell {
         name = "Detect Poison and Disease";
         level = 1;
         school = Schools.DIVINATION;
-        components = new Components[]{
-                Components.VERBAL,
-                Components.SOMATIC,
-                Components.MATERIAL
-        };
-        String material = "a yew leaf";
+        components.add(Components.VERBAL);
+        components.add(Components.SOMATIC);
+        components.add(Components.MATERIAL);
+        material = "a yew leaf";
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
-        range = new Range(Target.SELF);
+        range = new Range(constants.Target.SELF);
         target = new Target(Aberbo);
         ritual = true;
-        description = "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.";
+        description = "For the duration, you can sense the presence and location of poisons, poisonous creatures, and" +
+                " diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or " +
+                "disease in each case.The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 " +
+                "inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.";
     }
 
 }
