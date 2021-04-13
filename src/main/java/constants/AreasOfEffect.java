@@ -6,6 +6,7 @@ public enum AreasOfEffect {
     CONE,
     CUBE,
     SPHERE,
-    CYLINDER
+    CYLINDER,
+    RADIUS
 
 }

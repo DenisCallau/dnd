@@ -21,6 +21,10 @@ public class Range {
         this.normalDistance = new Distance(distance, DistanceUnits.FEET);
     }
 
+    public Range(double distance, DistanceUnits unit) {
+        this.normalDistance = new Distance(distance, unit);
+    }
+
     public Range(Target target) {
         this.target = target;
     }
