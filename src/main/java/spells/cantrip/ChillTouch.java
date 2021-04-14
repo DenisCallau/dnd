@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ChillTouch extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged " +
                 "spell attack against the creature to assail it with the chill of the grave. On a hit, the target " +

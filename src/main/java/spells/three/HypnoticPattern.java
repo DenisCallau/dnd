@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class HypnoticPattern extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube " +
                 "within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the " +

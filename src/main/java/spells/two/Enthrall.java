@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Enthrall extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You weave a distracting string of words, causing creatures of your choice that you can see " +
                 "within range and that can hear you to make a Wisdom saving throw. Any creature that can't be charmed" +

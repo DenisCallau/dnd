@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class LightningBolt extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a " +
                 "direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes" +

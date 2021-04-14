@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class PhantasmalKiller extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You tap into the nightmares of a creature you can see within range and create an illusory " +
                 "manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom " +

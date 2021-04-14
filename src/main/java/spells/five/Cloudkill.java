@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Cloudkill extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you " +
                 "choose within range. The fog spreads around corners. It lasts for the duration or until strong wind " +

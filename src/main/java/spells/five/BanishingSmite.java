@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class BanishingSmite extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "The next time you hit a creature with a weapon attack before this spell ends, your weapon " +
                 "crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if" +

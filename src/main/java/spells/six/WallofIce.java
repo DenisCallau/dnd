@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class WallofIce extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a wall of ice on a solid surface within range. You can form it into a hemispherical" +
                 " dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten " +

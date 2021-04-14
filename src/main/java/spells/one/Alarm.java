@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Alarm extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range " +
                 "that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or " +

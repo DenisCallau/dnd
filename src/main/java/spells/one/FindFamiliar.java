@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class FindFamiliar extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = true;
         description = "Your familiar acts independently of you, but it always obeys your commands. In combat, it " +
                 "rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other " +

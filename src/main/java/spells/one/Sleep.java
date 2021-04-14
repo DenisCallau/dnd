@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Sleep extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points " +
                 "of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are " +

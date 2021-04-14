@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class VitriolicSphere extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and" +
                 " explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a " +

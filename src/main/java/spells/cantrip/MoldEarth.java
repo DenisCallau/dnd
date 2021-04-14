@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class MoldEarth extends Spell {
         duration = new Duration(TimeUnits.INSTANTANEOUS);
 //TODO: Check duration
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* If you target an area of loose earth, you can instantaneously excavate it, move it along the" +
                 " ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.*" +

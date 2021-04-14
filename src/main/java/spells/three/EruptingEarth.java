@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class EruptingEarth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose a point you can see on the ground within range. A fountain of churned earth and stone " +
                 "erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity " +

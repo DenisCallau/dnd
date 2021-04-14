@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class WindWall extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A wall of strong wind rises from the ground at a point you choose within range. You can make " +
                 "the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you " +

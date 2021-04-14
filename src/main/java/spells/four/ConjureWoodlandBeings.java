@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ConjureWoodlandBeings extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* One fey creature of challenge rating 2 or lower* Two fey creatures of challenge rating 1 or " +
                 "lower* Four fey creatures of challenge rating 1/2 or lower* Eight fey creatures of challenge rating " +

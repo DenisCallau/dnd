@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class StinkingCloud extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range." +
                 " The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air " +

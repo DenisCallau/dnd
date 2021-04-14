@@ -3,7 +3,6 @@ package spells.nine;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class StormofVengeance extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360" +
                 " feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the " +

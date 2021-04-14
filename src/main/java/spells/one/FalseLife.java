@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class FalseLife extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit " +
                 "points for the duration.";

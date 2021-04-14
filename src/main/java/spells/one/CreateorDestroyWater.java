@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class CreateorDestroyWater extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You either create or destroy water.";
         higherLevels = "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class IceStorm extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder " +
                 "centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. " +

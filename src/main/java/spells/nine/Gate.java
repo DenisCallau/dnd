@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Gate extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You conjure a portal linking an unoccupied space you can see whithin range to a precise " +
                 "location on a different plane of existence. The portal is a circular opening, which you can make 5 " +

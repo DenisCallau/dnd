@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Daylight extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere " +
                 "is bright light and sheds dim light for an additional 60 feet.If you chose a point on an object you " +

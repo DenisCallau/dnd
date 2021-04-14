@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class CreateUndead extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids" +
                 " within range. Each corpse becomes a ghoul under your control. (The DM has game statistics for these" +

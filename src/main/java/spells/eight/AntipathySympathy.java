@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class AntipathySympathy extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell attracts or repels creatures of your choice. You target something within range, " +
                 "either a Huge or smaller object or creature or an erea that is no larger than a 200-foot cube. Then " +

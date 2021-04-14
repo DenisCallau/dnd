@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ConjureBarrage extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create " +
                 "a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone " +

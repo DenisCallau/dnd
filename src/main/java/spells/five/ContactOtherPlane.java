@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class ContactOtherPlane extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious " +
                 "entity from another plane. Contacting this extraplanar intelligence can strain or even break your " +

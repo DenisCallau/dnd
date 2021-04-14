@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class PhantomSteed extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = true;
         description = "A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your " +
                 "choice within range. You decide the creature’s appearance, but it is equipped with a saddle, bit, " +

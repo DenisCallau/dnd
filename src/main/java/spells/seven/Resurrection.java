@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Resurrection extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch a dead creature that has been dead for no more than a century, that didn't die of " +
                 "old age, and that isn't undead. If its soul is free and willing, the target returns to life with all" +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ConeofCold extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a " +
                 "Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage" +

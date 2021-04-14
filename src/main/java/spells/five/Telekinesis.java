@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Telekinesis extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You gain the ability to move or manipulate creatures or objects by thought. When you cast the " +
                 "spell, and as your action each round for the duration, you can exert your will on one creature or " +

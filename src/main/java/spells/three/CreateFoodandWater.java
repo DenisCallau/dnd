@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class CreateFoodandWater extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create 45 pounds of food and 30 gallons of water on the ground or in containers within " +
                 "range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but " +

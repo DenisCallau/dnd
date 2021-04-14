@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Nondetection extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "For the duration, you hide a target that you touch from divination magic. The target can be a " +
                 "willing creature or a place or an object no larger than 10 feet in any dimension. The target can’t " +

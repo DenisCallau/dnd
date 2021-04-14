@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class TruePolymorph extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose one creature or nonmagical object that you can see within range. You transform the " +
                 "creature into a different creature, the creature into an object or the object into a creature (the " +

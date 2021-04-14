@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Message extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You point your finger toward a creature within range and whisper a message. The target (and " +
                 "only the target) hears the message and can reply in a whisper that only you can hear.You can cast " +

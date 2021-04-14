@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class LightningArrow extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "The next time you make a ranged w eapon attack during the spell’s duration, the weapon’s " +
                 "ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make " +

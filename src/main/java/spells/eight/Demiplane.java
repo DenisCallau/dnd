@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class Demiplane extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a shadowy door on a flat solid surface that you can see within range. The door is " +
                 "large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a " +

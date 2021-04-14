@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class MassCureWounds extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A wave of healing energy washes out from a point of your choice within range. Choose up to six" +
                 " creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal " +

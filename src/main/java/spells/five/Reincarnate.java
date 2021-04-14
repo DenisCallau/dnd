@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Reincarnate extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been " +
                 "dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class InflictWounds extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Make a melee spell attack against a creature you canreach. On a hit, the target takes 3d10 " +
                 "necrotic damage.spell slot of 2nd level or higher, the damage increases by1d10 for each slot level " +

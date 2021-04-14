@@ -3,7 +3,6 @@ package spells.seven;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Sequester extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "By means of this spell, a willing creature or an object can be hidden away, safe from " +
                 "detection for the duration. When you cast the spell and touch the target, it becomes invisible and " +

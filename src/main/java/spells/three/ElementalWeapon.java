@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ElementalWeapon extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage " +
                 "types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to " +

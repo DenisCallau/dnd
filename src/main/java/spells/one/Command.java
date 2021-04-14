@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Command extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You speak a one-word command to a creature you can see within range. The target must succeed " +
                 "on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the " +

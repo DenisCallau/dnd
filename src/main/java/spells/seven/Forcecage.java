@@ -3,7 +3,6 @@ package spells.seven;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Forcecage extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(100);
-        target = new Target(Aberbo);
         ritual = false;
         description = "An immobile, invisible, cube-shaped prison composed of magical force springs into existence " +
                 "around an area you choose within range. The prison can be a cage or a solid box, as you choose.A " +

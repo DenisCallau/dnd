@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Grease extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Slick grease covers the ground in a 10-foot square centered on a point within range and turns " +
                 "it into difficult terrain for the duration.When the grease appears, each creature standing in its " +

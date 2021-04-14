@@ -3,7 +3,6 @@ package spells.nine;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class AstralProjection extends Spell {
 //TODO: Check duration
 //TODO: CHECK DURATION
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You and up to eight willing creatures within range project your astral bodies into the Astral " +
                 "Plane (the spell fails and the casting is wasted if you are already on that plane). The material " +

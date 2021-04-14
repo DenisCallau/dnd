@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class RayofSickness extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged " +
                 "spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a " +

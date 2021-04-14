@@ -1,10 +1,10 @@
 package spells.nine;
 
+import constants.DistanceUnits;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,8 +19,7 @@ public class MeteorSwarm extends Spell {
         components.add(Components.SOMATIC);
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
-        range = new Range(mile, DistanceUnits.MILE);
-        target = new Target(Aberbo);
+        range = new Range(1, DistanceUnits.MILE);
         ritual = false;
         description = "Blazing orbs of fire plummet to the ground at four different points you can see within range. " +
                 "Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity " +

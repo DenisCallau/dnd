@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class WindWalk extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You and up to ten willing creatures you can see within range assume a gaseous form for the " +
                 "duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of " +

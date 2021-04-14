@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ShieldofFaith extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A shimmering field appears and surrounds a creature of your choice within range, granting it a" +
                 " +2 bonus to AC for the duration.";

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class DimensionDoor extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(500);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You teleport yourself from your current location to any other spot within range. You arrive at" +
                 " exactly the spot desired. It can be a place you can see, one you can visualise, or one you can " +

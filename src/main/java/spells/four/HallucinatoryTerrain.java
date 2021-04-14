@@ -3,7 +3,6 @@ package spells.four;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class HallucinatoryTerrain extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other " +
                 "sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, " +

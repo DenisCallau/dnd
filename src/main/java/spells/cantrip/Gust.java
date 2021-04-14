@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Gust extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* One Medium or smaller creature that you choose must succeed on a Strength saving throw or be" +
                 " pushed up to 5 feet away from you.* You create a small blast of air capable of moving one object " +

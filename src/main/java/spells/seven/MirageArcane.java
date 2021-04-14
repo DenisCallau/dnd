@@ -2,7 +2,6 @@ package spells.seven;
 
 import constants.TimeUnits;
 import helpers.CastingTime;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class MirageArcane extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "You make terrain in a area up to 1 mile square look, sound, smell, and even feel like some " +
                 "other sort of terrain. The terrain's general shape remains the same, however. Open fields or a road " +

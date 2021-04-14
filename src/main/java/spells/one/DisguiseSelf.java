@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class DisguiseSelf extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You make yourself -- including your clothing, armor, weapons, and other belongings on your " +
                 "person -- look different until the spell ends or until you use your action to dismiss it. You can " +

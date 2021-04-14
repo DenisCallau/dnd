@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class Geas extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You place a magical command on a creature that you can see within range, forcing it to carry " +
                 "out some service or refrain from some action or course of activity as you decide. If the creature " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ControlWinds extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You take control of the air in a 100-foot cube that you can see within range. Choose one of " +
                 "the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you" +

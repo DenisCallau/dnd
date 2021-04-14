@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class SeeInvisibility extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "For the duration, you see invisible creatures and objects as if they were visible, and you can" +
                 " see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.";

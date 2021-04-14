@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class GlyphofWarding extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "When you cast this spell, you inscribe a glyph that harms other creatures, either upon a " +
                 "surface (such as a table or a section of floor or wall) or within an object that can be closed (such" +

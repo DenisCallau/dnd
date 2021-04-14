@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ChromaticOrb extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You " +
                 "choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make" +

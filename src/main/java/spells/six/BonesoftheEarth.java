@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class BonesoftheEarth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You cause up to six pillars of stone to burst from places on the ground that you can see " +
                 "within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet." +

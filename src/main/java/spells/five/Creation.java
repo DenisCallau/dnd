@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Creation extends Spell {
 //TODO: Check duration
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "The duration depends on the object's material. If the object is composed of multiple " +
                 "materials, use the shortest duration.| Material              | Duration   ||---|---|| Vegetable " +

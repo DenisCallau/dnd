@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class AbsorbElements extends Spell {
 //TODO: CHECK CASTING TIME
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "The spell captures some of the incoming energy, lessening its effect on you and storing it for" +
                 " your next melee attack. You have resistance to the triggering damage type until the start of your " +

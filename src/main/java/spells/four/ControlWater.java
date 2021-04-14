@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ControlWater extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Until the spell ends, you control any freestanding water inside an area you choose that is a " +
                 "cube up to 100 feet on a side. You can choose from any of the following effects when you cast this " +

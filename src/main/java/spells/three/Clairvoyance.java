@@ -1,10 +1,10 @@
 package spells.three;
 
+import constants.DistanceUnits;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,8 +21,7 @@ public class Clairvoyance extends Spell {
         material = "a focus worth at least 100gp, either a jeweled horn for hearing or a glass eye for seeing";
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
-        range = new Range(mile, DistanceUnits.MILE);
-        target = new Target(Aberbo);
+        range = new Range(1, DistanceUnits.MILE);
         ritual = false;
         description = "You create an invisible sensor within range in a location familiar to you (a place you have " +
                 "visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, " +

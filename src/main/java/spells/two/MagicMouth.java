@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class MagicMouth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You implant a message within an object in range, a message that is uttered when a trigger " +
                 "condition is met. Choose an object that you can see that isn't being worn or carried by another " +

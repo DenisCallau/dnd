@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class MindBlank extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect " +
                 "that would sense its emotions or read its thoughts, divination spells, and the charmed condition. " +

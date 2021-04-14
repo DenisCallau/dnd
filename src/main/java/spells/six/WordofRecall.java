@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class WordofRecall extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(5);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You and up to five willing creatures within 5 feet of you instantly teleport to a previously " +
                 "designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied " +

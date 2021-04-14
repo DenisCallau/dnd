@@ -1,7 +1,6 @@
 package spells.one;
 
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class FeatherFall extends Spell {
 //TODO: CHECK CASTING TIME
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose up to five falling creatures within range. A falling creature's rate of descent slows " +
                 "to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no " +

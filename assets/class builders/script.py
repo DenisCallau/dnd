@@ -186,7 +186,7 @@ for x in data:
     if rangeCheck == False:
         a += '//TODO: Check Range\n'
 
-    a += '        target = new Target(Aberbo);\n'
+#     a += '        target = new Target(Aberbo);\n'
 
     a += '        ritual = ' + str(ritual).lower() + ';\n'
     description = description.replace('\n', '')
@@ -202,7 +202,7 @@ for x in data:
     j += 1
 #     print(name)
 
-    path = 'C:/Callau/Pessoal/dnd/src/main/java/spells/' + leveln + '/'
+    path = 'D:/Dev/Projetos/dnd/src/main/java/spells/' + leveln + '/'
     fileName = os.path.join(path, nameWoSpaces)
     f = open(fileName + '.java', encoding='utf-8', mode='w')
     f.write(a)

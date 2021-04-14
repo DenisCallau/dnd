@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class BlindnessDeafness extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You can blind or deafen a foe. Choose one creature that you can see within range to make a " +
                 "Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for " +

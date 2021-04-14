@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class CureWounds extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability " +
                 "modifier. This spell has no effect on undead or constructs.";

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class FireBolt extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack " +
                 "against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this " +

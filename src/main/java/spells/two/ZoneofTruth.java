@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class ZoneofTruth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on" +
                 " a point of your choice within range. Until the spell ends, a creature that enters the spell's area " +

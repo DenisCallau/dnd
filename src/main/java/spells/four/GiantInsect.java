@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class GiantInsect extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range " +
                 "into versions of their natural forms for the duration. A centipede becomes a giant centipede, a " +

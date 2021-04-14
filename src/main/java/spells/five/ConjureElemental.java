@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class ConjureElemental extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a" +
                 " 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you " +

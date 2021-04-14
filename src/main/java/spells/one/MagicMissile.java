@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class MagicMissile extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create three glowing darts of magical force. Each dart hits a creature of your choice that" +
                 " you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike " +

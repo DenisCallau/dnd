@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class DustDevil extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that" +
                 " resembles a dust devil appears in the cube and lasts for the spell’s duration.Any creature that " +

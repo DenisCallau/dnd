@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class BeastBond extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You establish a telepathic link with one beast you touch that is friendly to you or charmed by" +
                 " you. The spell fails if the beast’s Intelligence is 4 or higher. Until the spell ends, the link is " +

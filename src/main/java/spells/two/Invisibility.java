@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Invisibility extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or" +
                 " carrying is invisible as long as it is on the target's person. The spell ends for a target that " +

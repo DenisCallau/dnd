@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class DelayedBlastFireball extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chose " +
                 "point within range as a glowing bead for the duration. When the spell ends, either because your " +

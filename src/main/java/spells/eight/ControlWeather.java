@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class ControlWeather extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You take control of the weather within 5 miles of you for the duration. You must be outdoors " +
                 "to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell " +

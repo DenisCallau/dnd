@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class FlamingSphere extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range " +
                 "and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a " +

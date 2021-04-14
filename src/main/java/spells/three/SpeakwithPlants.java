@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class SpeakwithPlants extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You imbue plants within 30 feet of you with limited sentience and animation, giving them the " +
                 "ability to communicate with you and follow your simple commands. You can question plants about " +

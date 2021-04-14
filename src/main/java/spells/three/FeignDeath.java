@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class FeignDeath extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You touch a willing creature and put it into a cataleptic state that is indistinguishable from" +
                 " death.For the spell’s duration, or until you use an action to touch the target and dismiss the " +

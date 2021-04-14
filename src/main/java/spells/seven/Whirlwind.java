@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Whirlwind extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A whirlwind howls down to a point on the ground you specify. The whirlwind is a " +
                 "10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your" +

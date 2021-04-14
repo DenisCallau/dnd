@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ConjureMinorElementals extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* One elemental of challenge rating 2 or lower* Two elementals of challenge rating 1 or lower*" +
                 " Four elementals of challenge rating 1/2 or lower* Eight elementals of challenge rating 1/4 or lower" +

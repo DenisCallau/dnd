@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class AnimalShapes extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Your magic turns others into beasts. Choose any number of willing creatures that you can see " +
                 "within range. You transform each target into the form of a Large or smaller beast with a challenge " +

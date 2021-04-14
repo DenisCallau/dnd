@@ -3,7 +3,6 @@ package spells.four;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class GuardianofFaith extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A Large spectral guardian appears and hovers for the duration in an unoccupied space of your " +
                 "choice that you can see within range. The guardian occupies that space and is indistinct except for " +

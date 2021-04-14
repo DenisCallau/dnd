@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Commune extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You contact your deity or a divine proxy and ask up to three questions that can be answered " +
                 "with a yes or no. You must ask your questions before the spell ends. You receive a correct answer " +

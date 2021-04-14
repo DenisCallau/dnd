@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class InsectPlague extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(300);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within " +
                 "range, The sphere spreads around corners. The sphere remains for the duration, and its area is " +

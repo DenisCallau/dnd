@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Frostbite extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You cause numbing frost to form on one creature that you can see within range. The target must" +
                 " make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has " +

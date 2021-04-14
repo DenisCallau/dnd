@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class PowerWordStun extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You speak a word of power that can overwhelm the mind of one creature you can see within " +
                 "range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ConjureVolley extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon " +
                 "into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon " +

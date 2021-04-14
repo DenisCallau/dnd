@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class TrueSeeing extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell gives the willing creature you touch the ability to see things as they actually are" +
                 ". For the duration, the creature has truesight, notices secret doors hidden by magic, and can see " +

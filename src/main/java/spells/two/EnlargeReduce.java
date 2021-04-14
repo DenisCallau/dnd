@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class EnlargeReduce extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You cause a creature or an object you can see within range to grow larger or smaller for the " +
                 "duration. Choose either a creature or an object that is neither worn nor carried. If the target is " +

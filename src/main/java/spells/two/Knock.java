@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Knock extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose an object that you can see within range. The object can be a door, a box, a chest, a " +
                 "set of manacles, a padlock, or another object that contains a mundane or magical means that prevents" +

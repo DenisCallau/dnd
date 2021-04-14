@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class Counterspell extends Spell {
 //TODO: CHECK CASTING TIME
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You attempt to interrupt a creature in the process of casting a spell. If the creature is " +
                 "casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell " +

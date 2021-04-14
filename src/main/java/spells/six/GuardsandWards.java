@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class GuardsandWards extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet " +
                 "square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to " +

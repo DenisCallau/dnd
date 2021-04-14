@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Sanctuary extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You ward a creature within range against attack. Until the spell ends, any creature who " +
                 "targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw." +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class HuntersMark extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You choose a creature you can see within range and mystically mark it as your quarry. Until " +
                 "the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack," +

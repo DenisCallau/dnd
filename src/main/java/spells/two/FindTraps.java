@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class FindTraps extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You sense the presence of any trap within range that is within line of sight. A trap, for the " +
                 "purpose of this spell, includes anything that would inflict a sudden or unexpected effect you " +

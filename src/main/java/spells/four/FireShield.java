@@ -3,7 +3,6 @@ package spells.four;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class FireShield extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot " +
                 "radius and dim light for an additional 10 feet, You can end the spell early by using an action to " +

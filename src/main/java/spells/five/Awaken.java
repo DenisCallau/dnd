@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Awaken extends Spell {
         castingTime = new CastingTime(8, TimeUnits.HOUR);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "After spending the casting time tracing magical pathways within a precious gemstone, you touch" +
                 " a Huge or smaller beast or plant. The target must have either no Intelligence score or an " +

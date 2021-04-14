@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class SpiritualWeapon extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a floating, spectral weapon within range that lasts for the duration or until you " +
                 "cast this spell again. When you cast the spell, you can make a melee spell attack against a creature" +

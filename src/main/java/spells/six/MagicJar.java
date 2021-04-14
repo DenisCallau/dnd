@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class MagicJar extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Your body falls into a catatonic state as your soul leaves it and enters the container you " +
                 "used for the spell's material component. While your soul inhabits the container, you are aware of " +

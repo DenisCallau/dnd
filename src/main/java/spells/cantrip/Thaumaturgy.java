@@ -3,7 +3,6 @@ package spells.cantrip;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -18,7 +17,6 @@ public class Thaumaturgy extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* Your voice booms up to three times as loud as normal for 1 minute.* You cause flames to " +
                 "flicker, brighten, dim, or change color for 1 minute.* You cause harmless tremors in the ground for " +

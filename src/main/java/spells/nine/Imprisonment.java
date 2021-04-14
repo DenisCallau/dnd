@@ -3,7 +3,6 @@ package spells.nine;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class Imprisonment extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a magical restraint to hold a creature that you can see within range. The target " +
                 "must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this" +

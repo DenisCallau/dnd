@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Earthquake extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(500);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a seismic disturbance at a point on the ground that you can see within range. For " +
                 "the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that" +

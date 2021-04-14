@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ThornWhip extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a long, vine-like whip covered in thorns that lashes out at your command toward a " +
                 "creature in range. Make a melee spell attack against the target. If the attack hits, the creature " +

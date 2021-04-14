@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class Scrying extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You can see and hear a particular creature you choose that is on the same plane of existence " +
                 "as you. The target must make a Wisdom saving throw, which is modified by how well you know the " +

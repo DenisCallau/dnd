@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class Divination extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = true;
         description = "Your magic and an offering put you in contact with a god or a god's servants. You ask a single" +
                 " question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a " +

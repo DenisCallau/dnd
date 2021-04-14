@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Fireball extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A bright streak flashes from your pointing finger to a point you choose within range and then " +
                 "blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Immolation extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Flames wreathe one creature you can see within range. The target must make a Dexterity saving " +
                 "throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a " +

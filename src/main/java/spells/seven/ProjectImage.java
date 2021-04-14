@@ -1,10 +1,10 @@
 package spells.seven;
 
+import constants.DistanceUnits;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,8 +21,7 @@ public class ProjectImage extends Spell {
         material = "a small replica of you made from materials worth at least 5 gp";
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.DAY);
-        range = new Range(miles, DistanceUnits.MILE);
-        target = new Target(Aberbo);
+        range = new Range(500, DistanceUnits.MILE);
         ritual = false;
         description = "You create an illusory copy of yourself that lasts for the duration. The copy can appear at " +
                 "any location within range that you have seen before, regardless of intervening obstacles. The " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ModifyMemory extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You attempt to reshape another creature's memories. One creature that you can see must make a " +
                 "Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a " +

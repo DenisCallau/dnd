@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class Polymorph extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell transforms a creature that you can see within range into a new form. An unwilling " +
                 "creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds " +

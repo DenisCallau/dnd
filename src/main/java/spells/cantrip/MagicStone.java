@@ -3,7 +3,6 @@ package spells.cantrip;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class MagicStone extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch one to three pebbles and imbue them with magic. You or someone else can make a " +
                 "ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it" +

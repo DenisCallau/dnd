@@ -2,7 +2,6 @@ package spells.eight;
 
 import constants.TimeUnits;
 import helpers.CastingTime;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Telepathy extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a telepathic link between yourself and a willing creature with which you are " +
                 "familiar. The creature can be anywhere on the same plane of existence as you. The spell ends if you " +

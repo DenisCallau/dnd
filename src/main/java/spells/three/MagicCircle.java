@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class MagicCircle extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on " +
                 "the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with" +

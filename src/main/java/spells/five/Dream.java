@@ -2,7 +2,6 @@ package spells.five;
 
 import constants.TimeUnits;
 import helpers.CastingTime;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Dream extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell shapes a creature's dreams. Choose a creature known to you as the target of this " +
                 "spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as" +

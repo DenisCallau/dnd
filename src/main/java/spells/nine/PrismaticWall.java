@@ -3,7 +3,6 @@ package spells.nine;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class PrismaticWall extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A shimmering, multicolored plane of light forms a vertical opaque wall--up to 90 feet long, 30" +
                 " feet high, and 1 inch thick--centered on a point you can see within range. Alternatively, you can " +

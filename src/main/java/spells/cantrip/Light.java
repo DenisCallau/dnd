@@ -3,7 +3,6 @@ package spells.cantrip;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Light extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, " +
                 "the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light" +

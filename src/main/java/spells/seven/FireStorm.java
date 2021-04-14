@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class FireStorm extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A storm made up of sheets of roaring flame appears in a location you choose within range. The " +
                 "area of the storm consists of up to ten 10-foot-cubes, which you can arrange as you wish. Each cube " +

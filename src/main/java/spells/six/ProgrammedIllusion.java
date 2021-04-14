@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class ProgrammedIllusion extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create an illusion of an object, a creature, or some other visible phenomenon within range" +
                 " that activates when a specific condition occurs. The illusion is imperceptible until then. It must " +

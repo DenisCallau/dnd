@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class GraspingVine extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you" +
                 " can see within range. When you cast this spell, you can direct the vine to lash out at a creature " +

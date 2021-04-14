@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class BladeBarrier extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall " +
                 "appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, " +

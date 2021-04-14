@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class TeleportationCircle extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils " +
                 "that link your location to a permanent teleportation circle of your choice, whose sigil sequence you" +

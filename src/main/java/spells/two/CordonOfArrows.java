@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class CordonOfArrows extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(5);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You plant four pieces of nonmagical ammunition—arrows or crossbow bolts—in the ground within " +
                 "range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other " +

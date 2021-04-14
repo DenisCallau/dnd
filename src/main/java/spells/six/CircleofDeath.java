@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class CircleofDeath extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A sphere of negative energy ripples out in a 60-foot- radius sphere from a point within range." +
                 " Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic " +

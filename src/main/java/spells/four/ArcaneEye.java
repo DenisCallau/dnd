@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ArcaneEye extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create an invisible, magical eye within range that hovers in the for the duration.You " +
                 "mentally recieve visual information from the eye, which has normal vision and darkvision out to 30 " +

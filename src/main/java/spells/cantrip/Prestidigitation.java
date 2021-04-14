@@ -3,7 +3,6 @@ package spells.cantrip;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Prestidigitation extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of " +
                 "wind, faint musical notes, or an odd odor.* You instantaneously light or snuff out a candle, a " +

@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Forbiddance extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = true;
         description = "You create a ward against magical travel that protects up to 40,000 square feet of floor space" +
                 " to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or" +

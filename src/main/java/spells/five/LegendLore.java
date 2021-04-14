@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class LegendLore extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Name or describe a person, place, or object. The spell brings to your mind a brief summary of " +
                 "the significant lore about the thing you named. The lore might consist of current tales, forgotten " +

@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Sending extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(1, TimeUnits.ROUND);
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "You send a short message of twenty-five words or less to a creature with which you are " +
                 "familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ConjureCelestial extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You summon a celestial of challenge rating 4 or lower, which apperas in an unoccupied space " +
                 "that you can see within range. The celestial disappears when it drops to 0 hit points or when the " +

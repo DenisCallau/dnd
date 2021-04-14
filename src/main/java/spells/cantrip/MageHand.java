@@ -3,7 +3,6 @@ package spells.cantrip;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class MageHand extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A spectral, floating hand appears at a point you choose within range. The hand lasts for the " +
                 "duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet " +

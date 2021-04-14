@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class WaterySphere extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You conjure up a sphere of water with a 10-foot radius on a point you can see within range. " +
                 "The sphere can hover in the air, but no more than 10 feet off the ground. The sphere remains for the" +

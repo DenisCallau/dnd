@@ -3,7 +3,6 @@ package spells.seven;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -23,7 +22,6 @@ public class Simulacrum extends Spell {
         castingTime = new CastingTime(12, TimeUnits.HOUR);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You shape an illusory duplicate of one beast or humanoid that is within range for the entire " +
                 "casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, " +

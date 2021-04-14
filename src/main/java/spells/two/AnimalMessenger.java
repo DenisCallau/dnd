@@ -3,7 +3,6 @@ package spells.two;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class AnimalMessenger extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = true;
         description = "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can " +
                 "see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must " +

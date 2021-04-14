@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ShapeWater extends Spell {
         duration = new Duration(TimeUnits.INSTANTANEOUS);
 //TODO: Check duration
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* You instantaneously move or otherwise change the flow of the water as you direct, up to 5 " +
                 "feet in any direction. This movement doesn’t have enough force to cause damage.* You cause the water" +

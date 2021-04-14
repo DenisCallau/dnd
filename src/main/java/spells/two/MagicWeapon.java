@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class MagicWeapon extends Spell {
         castingTime = new CastingTime(1, TimeUnits.BONUS_ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a" +
                 " +1 bonus to attack rolls and damage rolls.";

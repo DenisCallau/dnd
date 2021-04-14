@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class Hallow extends Spell {
         castingTime = new CastingTime(24, TimeUnits.HOUR);
 //TODO: CHECK DURATION
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You touch a point and infuse an area around it with holy (or unholy) power. The area can have " +
                 "a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect " +

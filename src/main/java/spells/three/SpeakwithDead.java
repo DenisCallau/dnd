@@ -3,7 +3,6 @@ package spells.three;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class SpeakwithDead extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You grant the semblance o f life and intelligence to a corpse of your choice within range, " +
                 "allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead" +

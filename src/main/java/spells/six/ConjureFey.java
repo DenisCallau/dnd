@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ConjureFey extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form " +
                 "of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within" +

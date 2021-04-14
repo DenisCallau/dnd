@@ -3,7 +3,6 @@ package spells.one;
 import constants.TimeUnits;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class HellishRebuke extends Spell {
 //TODO: CHECK CASTING TIME
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You point your finger, and the creature that damaged you is momentarily surrounded by hellish " +
                 "flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save," +

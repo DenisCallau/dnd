@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ArcaneGate extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(500);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create linked teleportation portals that remain open for the duration. Choose two points " +
                 "on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you" +

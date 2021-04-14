@@ -3,7 +3,6 @@ package spells.five;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class PlanarBinding extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
 //TODO: CHECK DURATION
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your " +
                 "service. The creature must be within range for the entire casting of the spell. (Typically, the " +

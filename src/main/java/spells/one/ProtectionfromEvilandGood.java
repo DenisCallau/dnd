@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class ProtectionfromEvilandGood extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 10, TimeUnits.MINUTE);
         range = new Range(0);
-        target = new Target(Aberbo);
         ritual = false;
         description = "The protection grants several benefits. Creatures of those types have disadvantage on attack " +
                 "rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the" +

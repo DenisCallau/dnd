@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class TransportviaPlants extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(1, TimeUnits.ROUND);
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell creates a magical link between a Large or larger inanimate plant within range and " +
                 "another plant, at any distance, on the same plane of existence. You must have seen or touched the " +

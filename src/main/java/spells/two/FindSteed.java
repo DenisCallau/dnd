@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class FindSteed extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal " +
                 "steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the " +

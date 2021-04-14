@@ -3,7 +3,6 @@ package spells.eight;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Tsunami extends Spell {
         castingTime = new CastingTime(1, TimeUnits.MINUTE);
         duration = new Duration(true, 6, TimeUnits.ROUND);
 //TODO: Check Range
-        target = new Target(Aberbo);
         ritual = false;
         description = "A wall of water springs into existence at a point you choose within range. You can make the " +
                 "wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration.When the" +

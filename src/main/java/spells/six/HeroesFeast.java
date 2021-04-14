@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -22,7 +21,6 @@ public class HeroesFeast extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to" +
                 " consume and disappears at the end of that time, and the beneficial effects don’t set in until this " +

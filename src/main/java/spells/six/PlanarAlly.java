@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class PlanarAlly extends Spell {
         castingTime = new CastingTime(10, TimeUnits.MINUTE);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "When the creature appears, it is under no compulsion to behave in any particular way. You can " +
                 "ask the creature to perform a service in exchange for payment, but it isn’t obliged to do so. The " +

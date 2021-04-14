@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class FogCloud extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads" +
                 " around corners, and its area is heavily obscured. It lasts for the duration or until a wind of " +

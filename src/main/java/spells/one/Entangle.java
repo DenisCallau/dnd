@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Entangle extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(90);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Grasping weeds and vines sprout from the ground in a 20-foot square starting form a point " +
                 "within range. For the duration, these plants turn the ground in the area into difficult terrain.A " +

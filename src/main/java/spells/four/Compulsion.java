@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class Compulsion extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(30);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Creatures of your choice that you can see within range and that can hear you must make a " +
                 "Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On" +

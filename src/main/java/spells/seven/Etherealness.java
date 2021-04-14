@@ -3,7 +3,6 @@ package spells.seven;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Etherealness extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(constants.Target.SELF);
-        target = new Target(Aberbo);
         ritual = false;
         description = "You step into the border regions of the Ethereal Plane, in the area where it overlaps with " +
                 "your current plane. You remain in the Border Ethereal for the duration or until you use your action " +

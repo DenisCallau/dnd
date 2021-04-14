@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class PlantGrowth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.HOUR);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell channels vitality into plants within a specific area. There are two possible uses " +
                 "for the spell, granting either immediate or long-term benefits.If you cast this spell using 1 " +

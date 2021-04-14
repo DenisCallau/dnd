@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class StormSphere extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.MINUTE);
         range = new Range(150);
-        target = new Target(Aberbo);
         ritual = false;
         description = "A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose " +
                 "within range. The sphere remains for the spell’s duration. Each creature in the sphere when it " +

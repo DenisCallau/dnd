@@ -3,7 +3,6 @@ package spells.six;
 import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -21,7 +20,6 @@ public class MoveEarth extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
 //TODO: CHECK DURATION
         range = new Range(120);
-        target = new Target(Aberbo);
         ritual = false;
         description = "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt," +
                 " sand, or clay in the area in any manner you choose for the duration. You can raise or lower the " +

@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -19,7 +18,6 @@ public class Teleport extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(TimeUnits.INSTANTANEOUS);
         range = new Range(10);
-        target = new Target(Aberbo);
         ritual = false;
         description = "This spell instantly transports you and up to eight willing creatures of your choice that you " +
                 "can see within range, or a single object, that you can see within range, to a destination you select" +

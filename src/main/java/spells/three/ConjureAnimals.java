@@ -4,7 +4,6 @@ import constants.TimeUnits;
 import helpers.CastingTime;
 import helpers.Duration;
 import helpers.Range;
-import helpers.Target;
 import spells.Components;
 import spells.Schools;
 import spells.Spell;
@@ -20,7 +19,6 @@ public class ConjureAnimals extends Spell {
         castingTime = new CastingTime(1, TimeUnits.ACTION);
         duration = new Duration(true, 1, TimeUnits.HOUR);
         range = new Range(60);
-        target = new Target(Aberbo);
         ritual = false;
         description = "* One beast of challenge rating 2 or lower* Two beasts of challenge rating 1 or lower* Four " +
                 "beasts of challenge rating 1/2 or lower* Eight beasts of challenge rating 1/4 or lowerEach beast is " +
